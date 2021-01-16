@@ -1,0 +1,41 @@
+{
+    "regions": {
+      "Ipeiros": [
+        {
+          "name": "Katogi",
+          "producer": "Glinavos",
+          "variety": "agiorgitiko",
+          "alcohol": "8",
+          "year": 1997,
+          "barrel": "0",
+          "image": "1"
+        },
+        {
+        "name": "Ths grias h poutsa",
+        "producer" : "Glinavos",
+        "variety": "agiorgitiko",
+        "alcohol": "9",
+        "year": 1998,
+        "barrel": 9,
+        "imgUrl": "none"
+    },
+        {"name": "Second producers wine",
+        "producer" : "Malapidas",
+        "variety": "agiorgitiko",
+        "alcohol": "9",
+        "year": 1998,
+        "barrel": 9,
+        "imgUrl": "none"}
+      ],
+      "Thessalia": [
+          {
+        "name": "The second best wine",
+        "producer" : "Thessaliotikos",
+        "variety": "agiorgitiko",
+        "alcohol": "9",
+        "year": 1998,
+        "barrel": 9,
+        "imgUrl": "none"}
+      ]
+    }
+  }
