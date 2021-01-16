@@ -10,7 +10,12 @@ const useProducer = (defaultState, generalOptions, specificOptions) => {
       ];
       return (
         <>
-        {<div><h2>Region: {specificOptions}</h2><h3>Producers:</h3></div>}
+          {
+            <div>
+              <h2>Region: {specificOptions}</h2>
+              <h3>Producers:</h3>
+            </div>
+          }
           {uniqueProducersPerRegion.map((uniqueProducer) => (
             <ul key={uniqueProducer}>
               <li>
