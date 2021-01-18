@@ -10,31 +10,27 @@ const useProducer = (defaultState, generalOptions, specificOptions) => {
       ];
       return (
         <>
-          {
+          <div>
             <div>
               <h2>Region: {specificOptions}</h2>
               <h3>Producers:</h3>
             </div>
-          }
-          {uniqueProducersPerRegion.map((uniqueProducer) => (
-            <ul key={uniqueProducer}>
-              <li>
-                <div>
-                  <button
-                    onMouseEnter={() => setCurrentProducer(uniqueProducer)}
-                  >
-                    {uniqueProducer}
-                  </button>
-                </div>
-              </li>
-            </ul>
-          ))}
+            <div>
+              {uniqueProducersPerRegion.map((uniqueProducer) => (
+                <ul key={uniqueProducer}>
+                  <li>
+                    <button
+                      onMouseEnter={() => setCurrentProducer(uniqueProducer)}
+                    >
+                      {uniqueProducer}
+                    </button>
+                  </li>
+                </ul>
+              ))}
+            </div>
+          </div>
           <div>
-            {currentProducer && (
-              <div>
-                <h3>Wines of {currentProducer}:</h3>
-              </div>
-            )}
+            {currentProducer && <h3>Wines of {currentProducer}:</h3>}
             {currentProducer &&
               generalOptions[specificOptions]
                 .filter((m) => m.producer === currentProducer)

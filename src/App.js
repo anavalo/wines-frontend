@@ -48,12 +48,8 @@ function App() {
       <div>
         <h1 className="main-title">Wines of Greece</h1>
       </div>
-
-      <div className="map">
+      <div className="body-container">
         <Maps data={wineData} clickOnMap={clickOnMap} />
-      </div>
-
-      <div>
         <ProducerDropdown />
       </div>
     </div>
